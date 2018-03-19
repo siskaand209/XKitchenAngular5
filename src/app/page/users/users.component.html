@@ -1,0 +1,19 @@
+<h3> Users </h3>
+<table>
+  <thead>
+    <tr>
+      <th>userId</th>
+      <th>BadgeId</th>
+      <th>Name</th>
+      <th>FullName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ users.userId}}</td>
+      <td>{{ users.badgeId}}</td>
+      <td>{{ users.name}}</td>
+      <td>{{ users.fullName}}</td>
+    </tr>
+  </tbody>
+</table>
