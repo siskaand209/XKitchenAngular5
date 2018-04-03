@@ -22,6 +22,8 @@ import { TableComponent } from './page/tables/table/table.component';
 import { TableListComponent } from './page/tables/table-list/table-list.component';
 import { TableService } from './services/table.service';
 import { Http, HttpModule } from '@angular/http';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 
 
 
@@ -47,7 +49,8 @@ import { Http, HttpModule } from '@angular/http';
     HttpClientModule,
     HttpModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot()
   ],
   providers: [{provide: APP_BASE_HREF, useValue: '/'}, CategoryService, UserService, TableService],
   bootstrap: [AppComponent]

@@ -13,8 +13,8 @@ export class TableListComponent implements OnInit {
   constructor(private _tableService: TableService) { }
 
   ngOnInit() {
-    this._tableService.getTable()
-    .subscribe(data => this.tables = data);
+    this._tableService.getTables();
+   
   }
 
 
